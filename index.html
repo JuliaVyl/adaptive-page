@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test task</title>
+    <!-- Slider library -->
+    <link rel="stylesheet" href="swiper-lib.css" />
+    <!-- Own styles -->
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./swiper.css" />
+    <link rel="stylesheet" href="./news.css" />
+  </head>
+  <body onload="showPosts();">
+    <div class="wrapper">
+      <!-- Slider -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-slide__circle"></div>
+            <div class="swiper-slide__review-wrapper">
+              <div class="swiper-slide__review">
+                <p class="swiper-slide__text text-loading"></p>
+                <div class="author-loading"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-btn__container">
+          <div class="swiper-button-prev">
+            <div class="swiper-button-prev__circle">
+              <img
+                src="./static/image/next.svg"
+                alt="next"
+                class="swiper-button-prev__img"
+              />
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <div class="swiper-button-next__circle">
+              <img
+                src="./static/image/next.svg"
+                alt="next"
+                class="swiper-button-next__img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- News -->
+      <div class="news">
+        <h1>What's New?</h1>
+        <div class="news__cards">
+          <!-- 1 -->
+          <a
+            class="news__card"
+            href="https://blog.combin.com/instagram-faq-all-you-need-to-know-bb2559ac606b"
+            target="_blank"
+          >
+            <div class="card__image">
+              <img
+                src="./static/image/desktop/img1@2x.png"
+                srcset="
+                  ./static/image/desktop/img1.png     320w,
+                  ./static/image/desktop/img1@2x.png  720w,
+                  ./static/image/desktop/img1@3x.png 1030w
+                "
+                sizes=" 
+                (min-width: 320px) 440px, 
+                (min-width: 720px) 880px, 
+                100vw
+             "
+                alt="1"
+                class="image-img"
+              />
+            </div>
+            <p class="card__link">Instagram FAQ — All You Need To Know</p>
+          </a>
+          <!-- 2 -->
+          <a
+            class="news__card"
+            href="https://blog.combin.com/dmexco-2019-meet-combin-in-cologne-b845529a1e63"
+            target="_blank"
+          >
+            <div class="card__image">
+              <img
+                src="./static/image/desktop/img2@2x.png"
+                srcset="
+                  ./static/image/desktop/img2.png     320w,
+                  ./static/image/desktop/img2@2x.png  720w,
+                  ./static/image/desktop/img2@3x.png 1030w
+                "
+                sizes=" 
+              (min-width: 320px) 440px, 
+              (min-width: 720px) 880px, 
+              100vw
+           "
+                alt="1"
+                class="image-img"
+              />
+            </div>
+            <p class="card__link">DMEXCO 2019 — Meet Combin in Cologne</p>
+          </a>
+          <!-- 3 -->
+          <a
+            class="news__card"
+            href="https://blog.combin.com/limits-display-new-user-preview-new-filters-and-many-more-features-all-about-combin-2-1-d78713383da7"
+            target="_blank"
+          >
+            <div class="card__image">
+              <img
+                src="./static/image/desktop/img3@2x.png"
+                srcset="
+                  ./static/image/desktop/img3.png     320w,
+                  ./static/image/desktop/img3@2x.png  720w,
+                  ./static/image/desktop/img3@3x.png 1030w
+                "
+                sizes=" 
+            (min-width: 320px) 440px, 
+            (min-width: 720px) 880px, 
+            100vw
+         "
+                alt="1"
+                class="image-img"
+              />
+            </div>
+            <p class="card__link">
+              Limits Display, New User Preview, New Filters, and Many More
+              Features — All about Combin 2.1
+            </p>
+          </a>
+        </div>
+        <div class="news__more" id="news__more">
+          <button class="news__read-more" id="btn-more">Read More</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
