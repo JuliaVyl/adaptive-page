@@ -45,8 +45,8 @@ async function getReviews() {
     cards.append(slide);
   }
 }
-// Fetching data imitation
-setTimeout(async () => {
+
+(async () => {
   cards.innerHTML = '';
   await getReviews();
   let prev = document.querySelector('.swiper-button-prev');
@@ -64,12 +64,10 @@ setTimeout(async () => {
       prevEl: '.swiper-button-prev',
     },
   });
-}, 1000);
+})();
 
 function showPosts() {
   let btn = document.getElementById('btn-more');
-  // NOTE: showAlert(); или showAlert(param); так НЕ сработает.
-  // Нужно использовать ссылку на функцию, но не вызов функции.
   btn.onclick = createPosts;
 }
 
